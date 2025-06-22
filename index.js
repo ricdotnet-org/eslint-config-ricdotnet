@@ -1,4 +1,4 @@
-import { builtinModules } from 'node';
+import { builtinModules } from 'module';
 import globals from 'globals';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 

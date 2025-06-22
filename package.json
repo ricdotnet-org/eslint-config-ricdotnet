@@ -24,7 +24,6 @@
   "peerDependencies": {
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^16.2.0",
-    "node": "^22",
 		"eslint": ">= 9"
 	}
 }
