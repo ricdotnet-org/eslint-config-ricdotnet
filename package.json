@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-ricdotnet",
+  "version": "0.0.1",
+  "description": "My personal eslint config",
+  "homepage": "https://github.com/ricdotnet/eslint-config-ricdotnet#readme",
+  "bugs": {
+    "url": "https://github.com/ricdotnet/eslint-config-ricdotnet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricdotnet/eslint-config-ricdotnet.git"
+  },
+  "license": "ISC",
+  "author": "ricdotnet",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.2.0"
+  }
+}
