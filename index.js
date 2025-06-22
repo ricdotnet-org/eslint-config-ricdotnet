@@ -14,7 +14,6 @@ export default [
       },
     },
     rules: {
-      semi: 'always',
       // imports
       'import/order': 'off',
       'simple-import-sort/imports': [
@@ -46,6 +45,7 @@ export default [
         },
       ],
       // other
+      semi: 'error',
       curly: 'error',
       'no-unused-vars': 'error',
       'no-undef': 'warn',
