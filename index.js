@@ -28,6 +28,8 @@ export default [
             ['^react'],
             // Nextjs related imports
             ['^next'],
+            // Nuxtjs related imports
+            ['^nuxt'],
             // Node.js builtins prefixed with `node:`.
             ['node:', `^(${builtinModules.join('|')})(/|$)`],
             // Packages.
@@ -46,8 +48,20 @@ export default [
       ],
       // other
       semi: 'error',
+      quotes: ['error', 'single'],
       curly: 'error',
-      'no-unused-vars': 'error',
+      'no-unused-vars': [
+        'error',
+        {
+          vars: 'all',
+          args: 'after-used',
+          caughtErrors: 'all',
+          varsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+          argsIgnorePattern: '^_',
+        },
+      ],
       'no-undef': 'warn',
     },
   },
