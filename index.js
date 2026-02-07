@@ -50,7 +50,7 @@ export default [
       semi: 'error',
       quotes: ['error', 'single'],
       curly: 'error',
-      'no-unused-vars': [
+      '@typescript-eslint/no-unused-vars': [
         'error',
         {
           vars: 'all',
