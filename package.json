@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ricdotnet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "My personal eslint config",
   "homepage": "https://github.com/ricdotnet/eslint-config-ricdotnet#readme",
   "bugs": {
