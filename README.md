@@ -3,7 +3,7 @@
 ## Install using npm or other preferred package manager
 
 ```console
-npm install -D https://github.com/ricdotnet-org/eslint-config-ricdotnet{@version}
+npm install -D https://github.com/ricdotnet-org/eslint-config-ricdotnet{#version}
 ```
 
 ## Use with eslint flat config
