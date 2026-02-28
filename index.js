@@ -1,12 +1,14 @@
 import { builtinModules } from 'module';
 import globals from 'globals';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 
 export default [
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx,vue}'],
     plugins: {
       'simple-import-sort': simpleImportSort,
+      '@typescript-eslint': typescriptPlugin,
     },
     languageOptions: {
       globals: {
