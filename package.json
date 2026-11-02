@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-ricdotnet",
-  "version": "0.0.4",
+  "name": "@ricdotnet/eslint",
+  "version": "0.0.5",
   "description": "My personal eslint config",
   "homepage": "https://github.com/ricdotnet/eslint-config-ricdotnet#readme",
   "bugs": {
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/ricdotnet/eslint-config-ricdotnet.git"
   },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "license": "ISC",
   "author": "ricdotnet",
   "type": "module",

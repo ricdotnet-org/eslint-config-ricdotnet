@@ -3,28 +3,25 @@
 ## Install using npm or other preferred package manager
 
 ```console
-npm install -D https://github.com/ricdotnet-org/eslint-config-ricdotnet{#version}
+npm install -D @ricdotnet/eslint
 ```
 
 ## Use with eslint flat config
 
-The example below is just to demonstrate how this could be integrated into an existing eslint flat config.
+The example below is just to demonstrate how this could be integrated into an existing eslint configuration.
 
 ```js
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { defineConfig, globalIgnores } from 'eslint/config';
+import eslintConfigRicdotnet from '@ricdotnet/eslint';
 
-import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
-import eslintConfigRicdotnet from 'eslint-config-ricdotnet';
+const eslintConfig = defineConfig([
+  ...eslintConfigRicdotnet,
+  {
+    rules: {
+      // other rules
+    },
+  },
+]);
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
-
-export default [...eslintConfigRicdotnet];
+export default eslintConfig;
 ```
